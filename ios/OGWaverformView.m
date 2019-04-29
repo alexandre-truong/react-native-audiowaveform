@@ -353,6 +353,7 @@
             for (int i = 0; i < sampleCount ; i ++) {
 
                 Float32 left = (Float32) *samples++;
+                NSLog("left value : %@", left);
                 left = decibel(left);
                 left = minMaxX(left,noiseFloor,0);
 
